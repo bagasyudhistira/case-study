@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="mb-4">Register</h2>
+      <form id="registerForm" onsubmit="signUp(event)">
+        <div class="row mb-3">
+          <div class="col">
+            <label for="first_name" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              name="first_name"
+              required
+            />
+          </div>
+          <div class="col">
+            <label for="last_name" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              name="last_name"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="phone_number" class="form-label">Phone Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="phoneNumber"
+            name="phone_number"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="hire_date" class="form-label">Hire Date</label>
+          <input
+            type="date"
+            class="form-control"
+            id="hireDate"
+            name="hire_date"
+            required
+          />
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <label for="job_id" class="form-label">Job ID</label>
+            <!-- <input type="text" class="form-control" id="jobId" name="job_id" /> -->
+            <select class="form-control" id="jobId" name="job_id" required>
+              <option value="">Select a Job</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="salary" class="form-label">Salary</label>
+            <input
+              type="number"
+              class="form-control"
+              id="salary"
+              name="salary"
+              required
+            />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <label for="commission_pct" class="form-label"
+              >Commission PCT</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="commissionPct"
+              name="commission_pct"
+              required
+            />
+          </div>
+          <div class="col">
+            <label for="manager_id" class="form-label">Manager ID</label>
+            <input
+              type="number"
+              class="form-control"
+              id="managerId"
+              name="manager_id"
+              required
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="department_id" class="form-label">Department ID</label>
+          <!-- <input
+            type="number"
+            class="form-control"
+            id="departmentId"
+            name="department_id"
+          /> -->
+          <select
+            class="form-control"
+            id="departmentId"
+            name="department_id"
+            required
+          >
+            <option value="">Select a Department</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+        <div id="message"></div>
+      </form>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/register.js"></script>
+  </body>
+</html>
